@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta 360</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to Insta 360</h1>
+    <button onclick="openIframePage()">Open 360 Experience</button>
+    <iframe width="100%" height="640" style="width: 100%; height: 640px; border: none; max-width: 100%;"
+        allow="xr-spatial-tracking; vr; gyroscope; accelerometer; fullscreen; autoplay; xr" scrolling="no"
+        allowfullscreen="true" frameborder="0"
+        src="https://webobook.com/public/6662d41bb39c9d68af47fc52,en?ap=true&si=true&sm=false&sp=true&sfr=true&sl=true&sop=false&"
+        allowvr="yes"  ></iframe>
+    <script>
+        function openIframePage() {
+            window.open('https://webobook.com/public/6662d41bb39c9d68af47fc52,en?ap=true&si=true&sm=false&sp=true&sfr=true&sl=true&sop=false&', '_blank');
+        }
+    </script>
+</body>
+
+</html>
